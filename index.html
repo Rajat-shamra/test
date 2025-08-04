@@ -1,10 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Jenkins Deployment Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajat Sharma | Jenkins Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #005bb5;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            max-width: 800px;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        footer {
+            background: #005bb5;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align:center; color:blue;">Welcome! Deployed via Jenkins Pipeline ✅</h1>
-    <p style="text-align:center;">This page is served from Ubuntu Apache server.</p>
+    <header>
+        <h1>Welcome to Rajat Sharma's Website ✅</h1>
+        <p>Deployed via Jenkins Pipeline on Ubuntu Apache Server</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I am Rajat Sharma, a passionate DevOps Engineer skilled in Jenkins, Docker, Kubernetes, AWS, and automation tools. This page is deployed using a Jenkins CI/CD pipeline on an Ubuntu Apache server.</p>
+        </div>
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>✔ Jenkins CI/CD</li>
+                <li>✔ Docker & Kubernetes</li>
+                <li>✔ AWS & Cloud Services</li>
+                <li>✔ Linux System Administration</li>
+                <li>✔ Infrastructure as Code</li>
+            </ul>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <strong>rajat.sharma@example.com</strong></p>
+            <p>GitHub: <a href="https://github.com/Rajat-shamra" target="_blank">github.com/Rajat-shamra</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Rajat Sharma | Powered by Jenkins Pipeline & Apache</p>
+    </footer>
 </body>
 </html>
