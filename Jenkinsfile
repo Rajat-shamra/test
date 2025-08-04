@@ -23,3 +23,7 @@ pipeline {
             steps {
                 echo "✅ Deploying the application..."
                 sh 'echo "Deployment simulation completed!"'
+            }
+        }
+    }
+}
