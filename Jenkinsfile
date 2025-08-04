@@ -3,26 +3,27 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo "Pulling latest code from GitHub..."
+                echo "✅ Pulling latest code from GitHub..."
                 checkout scm
             }
         }
         stage('Deploy to Apache') {
             steps {
-                echo "Deploying index.html to Ubuntu Apache..."
-                // SSH to Ubuntu server and copy file to /var/www/html/
+                echo "✅ Deploying website to Apache..."
                 sh '''
-                # Install Apache if not installed
+                # Ensure Apache is installed
                 if ! dpkg -l | grep -q apache2; then
-                  sudo apt-get update
-                  sudo apt-get install -y apache2
+                    echo "Installing Apache..."
+                    sudo apt-get update
+                    sudo apt-get install -y apache2
                 fi
 
-                # Copy index.html to Apache directory
+                # Copy the HTML file to Apache root
                 sudo cp index.html /var/www/html/index.html
 
-                # Restart Apache
+                # Restart Apache service
                 sudo systemctl restart apache2
+                echo "✅ Deployment completed!"
                 '''
             }
         }
